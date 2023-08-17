@@ -29,7 +29,7 @@ const ResumeSkills = () => {
       gap={{ base: 3, md: 0 }}
       marginY={5}
       paddingBottom={10}
-      paddingTop={10}
+      paddingTop={{ base: 5, md: 10 }}
     >
       <Box>
         <Heading as="h2" size="md">
@@ -122,7 +122,7 @@ const ResumeSkills = () => {
             padding={1}
           >
             <BiLogoGithub />
-            <Text>Git / Github</Text>
+            <Text>Git/Github</Text>
           </ListItem>
         </List>
         <List width="30%">
@@ -154,7 +154,7 @@ const ResumeSkills = () => {
             padding={1}
           >
             <BiLogoTailwindCss />
-            <Text>Tailwind CSS</Text>
+            <Text>TailwindCSS</Text>
           </ListItem>
           <ListItem
             alignItems="center"

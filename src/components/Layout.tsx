@@ -20,7 +20,7 @@ const Layout = () => {
     };
   }, []);
   return (
-    <Box paddingX={10} paddingY={5}>
+    <Box paddingX={{ base: 5, md: 10 }} paddingY={5}>
       {isSmallScreen ? <DrawerNavigation /> : <Navbar />}
       <Outlet />
       <Divider orientation="horizontal" />

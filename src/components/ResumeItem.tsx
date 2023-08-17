@@ -12,12 +12,13 @@ const ResumeItem = ({ date, title, description }: Props) => {
     <Box
       display="flex"
       justifyContent="space-between"
-      gap={5}
-      marginBottom={5}
-      width="40vw"
+      marginBottom="20px"
+      width="100%"
       alignItems="center"
     >
-      <Text fontSize="sm">{date}</Text>
+      <Text fontSize="sm" width="45%">
+        {date}
+      </Text>
       <Box width="50%">
         <Text fontWeight="bold">{title}</Text>
         <Text>{description}</Text>

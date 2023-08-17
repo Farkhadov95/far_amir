@@ -6,6 +6,9 @@ const ResumeEducation = () => {
     <Box
       display="flex"
       justifyContent="space-between"
+      flexDirection={{ base: "column", sm: "column", md: "column", lg: "row" }}
+      gap={{ base: 3, md: 0 }}
+      marginY={5}
       paddingBottom={5}
       paddingTop={10}
     >

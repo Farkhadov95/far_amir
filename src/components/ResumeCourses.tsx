@@ -3,7 +3,15 @@ import ResumeItem from "./ResumeItem";
 
 const ResumeCourses = () => {
   return (
-    <Box display="flex" justifyContent="space-between" paddingTop={5}>
+    <Box
+      display="flex"
+      justifyContent="space-between"
+      flexDirection={{ base: "column", sm: "column", md: "column", lg: "row" }}
+      gap={{ base: 3, md: 0 }}
+      marginY={5}
+      paddingBottom={5}
+      paddingTop={10}
+    >
       <Box>
         <Heading as="h2" size="md">
           Courses
