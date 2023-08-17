@@ -1,4 +1,4 @@
-import { Heading, Box, List, Divider, ListItem } from "@chakra-ui/react";
+import { Heading, Box, List, Text, ListItem } from "@chakra-ui/react";
 import {
   BiLogoHtml5,
   BiLogoCss3,
@@ -25,6 +25,9 @@ const ResumeSkills = () => {
     <Box
       display="flex"
       justifyContent="space-between"
+      flexDirection={{ base: "column", sm: "column", md: "row" }}
+      gap={{ base: 3, md: 0 }}
+      marginY={5}
       paddingBottom={10}
       paddingTop={10}
     >
@@ -33,74 +36,177 @@ const ResumeSkills = () => {
           Skill & Expertise
         </Heading>
       </Box>
-      <Box display="flex" width="50%" gap={10}>
+      <Box
+        display="flex"
+        width={{ base: "100%", md: "60%" }}
+        flexDirection={{ base: "column", sm: "row" }}
+        justifyContent="space-between"
+      >
         <List width="30%">
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
-            <BiLogoHtml5 /> HTML
+          <ListItem
+            alignItems="center"
+            display="flex"
+            justifyContent="space-between"
+            gap={2}
+            padding={1}
+            width="fit-content"
+          >
+            <BiLogoHtml5 size="1em" />
+            <Text>HTML</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            padding={1}
+            width="fit-content"
+          >
             <BiLogoCss3 />
-            CSS
+            <Text>CSS</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <SiJavascript />
-            JavaScript
+            <Text>JavaScript</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <SiTypescript />
-            TypeScript
+            <Text>TypeScript</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <BiLogoReact />
-            React
+            <Text>React</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <SiRedux />
-            Redux
+            <Text>Redux</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <BiCloudUpload />
-            Rest API
+            <Text>Rest API</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <BiLogoGithub />
-            Git / Github
+            <Text>Git / Github</Text>
           </ListItem>
         </List>
         <List width="30%">
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <SiBootstrap />
-            Bootstrap
+            <Text>Bootstrap</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <SiChakraui />
-            ChakraUI
+            <Text>Chakra UI</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <BiLogoTailwindCss />
-            TailwindCSS
+            <Text>Tailwind CSS</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <SiAdobephotoshop />
-            Adobe Photoshop
+            <Text>Adobe Photoshop</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <BiLogoFigma />
-            Figma
+            <Text>Figma</Text>
           </ListItem>
         </List>
         <List width="30%">
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <SiKotlin />
-            Kotlin
+            <Text>Kotlin</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <BiLogoJava />
-            Java
+            <Text>Java</Text>
           </ListItem>
-          <ListItem alignItems="center" display="flex" gap={2} padding={1}>
+          <ListItem
+            alignItems="center"
+            display="flex"
+            gap={2}
+            width="fit-content"
+            padding={1}
+          >
             <BiLogoPython />
-            Python
+            <Text>Python</Text>
           </ListItem>
         </List>
       </Box>
