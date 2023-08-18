@@ -1,5 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
-import { BsLinkedin, BsFacebook, BsTelegram } from "react-icons/bs";
+import { BsLinkedin, BsFacebook, BsTelegram, BsGithub } from "react-icons/bs";
 import { BiCopyright } from "react-icons/bi";
 import React from "react";
 
@@ -10,7 +10,7 @@ const Footer = () => {
       justifyContent="space-between"
       flexDirection={{ base: "column", sm: "column", md: "row" }}
       gap={{ base: 3, md: 0 }}
-      marginY={5}
+      marginTop={5}
     >
       <Box>
         <Heading fontSize="sm">Email</Heading>
@@ -22,6 +22,7 @@ const Footer = () => {
           <BsLinkedin />
           <BsFacebook />
           <BsTelegram />
+          <BsGithub />
         </Box>
       </Box>
       <Box>
@@ -29,7 +30,6 @@ const Footer = () => {
           <BiCopyright />
           <Heading fontSize="sm">2023 by Amir Farkhadov.</Heading>
         </Box>
-        <Text>GitHub link</Text>
       </Box>
     </Box>
   );

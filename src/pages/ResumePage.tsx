@@ -6,7 +6,7 @@ import ResumeCourses from "../components/Resume/ResumeCourses";
 
 const ResumePage = () => {
   return (
-    <Box padding={{ base: "20px", md: "50px" }} paddingBottom="5vh">
+    <Box padding={{ base: "20px", md: "50px" }}>
       <Heading as="h1" size="xl" marginBottom={{ base: 2, md: 5 }}>
         Resume
       </Heading>
