@@ -1,7 +1,8 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
+import Lottie from "lottie-react";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import picture from "../../public/DSC_35817.webp";
-import { useNavigate } from "react-router-dom";
+import dev from "../assets/dev.json";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -29,7 +30,20 @@ const HomePage = () => {
         width={{ base: "80vw", md: "45vw", lg: "45vw" }}
         justifyContent="space-between"
       >
-        <Heading fontSize="8xl">Hello</Heading>
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          width="100%"
+          height={{}}
+        >
+          <Heading fontSize={{ base: "6xl", md: "6xl", lg: "8xl" }}>
+            Hello
+          </Heading>
+          <Box width={{ base: "50%", md: "50%", lg: "50%" }}>
+            <Lottie animationData={dev} />
+          </Box>
+        </Box>
         <Box>
           <Heading fontSize="2xl">My name is Amir Farkhadov.</Heading>
           <Text
