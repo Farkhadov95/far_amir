@@ -6,13 +6,21 @@ import wtw from "../../public/what-to-watch.png";
 import kekstagram from "../../public/kekstagram.png";
 import bigtrip from "../../public/big-trip.png";
 import sedona from "../../public/sedona.png";
+import Lottie from "lottie-react";
+import projects from "../assets/projects.json";
 
 const ProjectsPage = () => {
   return (
     <Box padding={{ base: "20px", md: "50px" }}>
-      <Heading as="h1" size="xl">
-        Projects
-      </Heading>
+      <Box display="flex" alignItems="center" width="100%">
+        <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
+          Projects
+        </Heading>
+        <Box width="25%">
+          <Lottie animationData={projects} />
+        </Box>
+      </Box>
+
       <ProjectsItem
         title="GameHub"
         description="This is a website where you can find the information about games, see their ratings and read the latest news."

@@ -30,17 +30,11 @@ const HomePage = () => {
         width={{ base: "80vw", md: "45vw", lg: "45vw" }}
         justifyContent="space-between"
       >
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          alignItems="center"
-          width="100%"
-          height={{}}
-        >
+        <Box display="flex" alignItems="center" width="100%">
           <Heading fontSize={{ base: "6xl", md: "6xl", lg: "8xl" }}>
             Hello
           </Heading>
-          <Box width={{ base: "50%", md: "50%", lg: "50%" }}>
+          <Box width="50%">
             <Lottie animationData={dev} />
           </Box>
         </Box>
