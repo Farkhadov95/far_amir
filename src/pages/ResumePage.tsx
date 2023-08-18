@@ -1,8 +1,8 @@
 import { Heading, Box, Divider } from "@chakra-ui/react";
 
-import ResumeSkills from "../components/ResumeSkills";
-import ResumeEducation from "../components/ResumeEducation";
-import ResumeCourses from "../components/ResumeCourses";
+import ResumeSkills from "../components/Resume/ResumeSkills";
+import ResumeEducation from "../components/Resume/ResumeEducation";
+import ResumeCourses from "../components/Resume/ResumeCourses";
 
 const ResumePage = () => {
   return (

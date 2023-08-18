@@ -17,7 +17,7 @@ const ResumeEducation = () => {
           Education
         </Heading>
       </Box>
-      <Box>
+      <Box width={{ base: "100%", md: "100%", lg: "60%" }}>
         <ResumeItem
           date="2021-2022"
           title="University of Greenwich"

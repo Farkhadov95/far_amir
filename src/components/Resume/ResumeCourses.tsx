@@ -17,7 +17,7 @@ const ResumeCourses = () => {
           Courses
         </Heading>
       </Box>
-      <Box>
+      <Box width={{ base: "100%", md: "100%", lg: "60%" }}>
         <ResumeItem
           date="February - May 2023"
           title="HTML Academy"
