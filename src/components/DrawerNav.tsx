@@ -62,15 +62,15 @@ const DrawerNavigation = () => {
               <ChakraLink as={RouterLink} to="projects" onClick={onClose}>
                 Projects
               </ChakraLink>
-              <ChakraLink as={RouterLink} to="contact" onClick={onClose}>
-                Contact
+              <ChakraLink as={RouterLink} to="about" onClick={onClose}>
+                About
               </ChakraLink>
             </VStack>
           </DrawerBody>
 
           <DrawerFooter>
             <Button variant="outline" mr={3} onClick={onClose}>
-              Отмена
+              Close
             </Button>
           </DrawerFooter>
         </DrawerContent>

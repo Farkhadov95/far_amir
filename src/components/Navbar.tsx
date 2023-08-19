@@ -27,8 +27,8 @@ const Navbar = () => {
           Projects
         </ChakraLink>
         <Divider orientation="vertical" />
-        <ChakraLink as={RouterLink} to="/contact">
-          Contact
+        <ChakraLink as={RouterLink} to="/about">
+          About
         </ChakraLink>
       </Box>
     </Box>

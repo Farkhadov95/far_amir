@@ -93,9 +93,9 @@ const HomePage = () => {
             alignItems="center"
             justifyContent="center"
             backgroundColor="teal.200"
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/about")}
           >
-            <Text>Contact</Text>
+            <Text>About</Text>
           </Box>
         </Box>
       </Box>

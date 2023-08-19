@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import DrawerNavigation from "./DrawerNav";
 
 const Layout = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 600);
 
   useEffect(() => {
     const handleResize = () => {

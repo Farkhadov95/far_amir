@@ -1,5 +1,4 @@
 import { Box, Divider, Heading } from "@chakra-ui/react";
-import React from "react";
 import ProjectsItem from "../components/ProjectsItem";
 import gamehub from "../../public/game-hub.png";
 import wtw from "../../public/what-to-watch.png";
