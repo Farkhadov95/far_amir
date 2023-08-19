@@ -1,10 +1,10 @@
 import { Box, Divider, Heading } from "@chakra-ui/react";
 import ProjectsItem from "../components/ProjectsItem";
-import gamehub from "../../public/game-hub.png";
-import wtw from "../../public/what-to-watch.png";
-import kekstagram from "../../public/kekstagram.png";
-import bigtrip from "../../public/big-trip.png";
-import sedona from "../../public/sedona.png";
+import gamehub from "../../public/game-hub.webp";
+import wtw from "../../public/what-to-watch.webp";
+import kekstagram from "../../public/kekstagram.webp";
+import bigtrip from "../../public/big-trip.webp";
+import sedona from "../../public/sedona.webp";
 import Lottie from "lottie-react";
 import projects from "../assets/projects.json";
 
