@@ -4,7 +4,7 @@ import ResumeSkills from "../components/Resume/ResumeSkills";
 import ResumeEducation from "../components/Resume/ResumeEducation";
 import ResumeCourses from "../components/Resume/ResumeCourses";
 import Lottie from "lottie-react";
-import book from "../assets/resume.json";
+import book from "../assets/bookForDark.json";
 
 const ResumePage = () => {
   return (

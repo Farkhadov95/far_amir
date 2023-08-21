@@ -20,6 +20,7 @@ import {
 import { MdMenu } from "react-icons/md";
 import { Link as RouterLink } from "react-router-dom";
 import { BsFillCircleFill } from "react-icons/bs";
+import ColorModeSwitch from "./ColorModeSwitch";
 
 const DrawerNavigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -68,7 +69,8 @@ const DrawerNavigation = () => {
             </VStack>
           </DrawerBody>
 
-          <DrawerFooter>
+          <DrawerFooter display="flex" justifyContent="space-between">
+            <ColorModeSwitch />
             <Button variant="outline" mr={3} onClick={onClose}>
               Close
             </Button>

@@ -15,7 +15,7 @@ const AboutPage = () => {
       </Box>
       <Box>
         <Heading fontSize="xl" paddingY={3}>
-          My journey to becoming a developer
+          My journey
         </Heading>
         <Text textAlign="justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste

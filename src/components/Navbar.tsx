@@ -7,6 +7,8 @@ import {
 } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { BsFillCircleFill } from "react-icons/bs";
+import ColorModeSwitch from "./ColorModeSwitch";
+import SettingModal from "./SettingModal";
 
 const Navbar = () => {
   return (
@@ -18,7 +20,7 @@ const Navbar = () => {
         </ChakraLink>
         <Text fontSize="sm">Frontend Developer</Text>
       </Box>
-      <Box display="flex" gap={2}>
+      <Box display="flex" gap={2} alignItems="center">
         <ChakraLink as={RouterLink} to="/resume">
           Resume
         </ChakraLink>
@@ -30,6 +32,8 @@ const Navbar = () => {
         <ChakraLink as={RouterLink} to="/about">
           About
         </ChakraLink>
+        <Divider orientation="vertical" />
+        <SettingModal />
       </Box>
     </Box>
   );
