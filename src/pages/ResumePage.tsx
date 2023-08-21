@@ -5,7 +5,7 @@ import ResumeEducation from "../components/Resume/ResumeEducation";
 import ResumeCourses from "../components/Resume/ResumeCourses";
 import Lottie from "lottie-react";
 import book from "../assets/bookForDark.json";
-import cv from "/CV.pdf";
+import cv from "/Amir Farkhadov's CV.pdf";
 
 const ResumePage = () => {
   return (
@@ -20,7 +20,7 @@ const ResumePage = () => {
           </Box>
         </Box>
         <Button as={Link} href={cv} download={true}>
-          <Text>Download CV</Text>
+          <Text fontSize={{ base: "xs", md: "md" }}>Download CV</Text>
         </Button>
       </Box>
       <ResumeSkills />
