@@ -17,11 +17,22 @@ const AboutPage = () => {
         <Heading fontSize="xl" paddingY={3}>
           My journey
         </Heading>
+        <Text textAlign="justify" paddingBottom={2}>
+          I am a passionate and dedicated Front-end Developer with a strong
+          foundation in crafting responsive web applications using a suite of
+          modern tools and technologies, including HTML, CSS, JavaScript, and
+          React. Holding a Master's degree in Computer Science, my academic the
+          background is further bolstered by a range of specialized developer
+          courses.
+        </Text>
         <Text textAlign="justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste
-          facilis magnam minus aperiam, id asperiores reiciendis consectetur
-          iusto impedit sed obcaecati dolores quia necessitatibus totam
-          praesentium libero enim rem.
+          Over the years, I have worked on various projects, and I always tried
+          to deliver web applications that not only adhere to specified
+          requirements, but are also completed within stipulated deadlines.
+          Beyond the web, I possess expertise in developing Android applications
+          utilizing Kotlin, Java, and RoomDB. My skill set extends to Machine
+          Learning where I have experience designing models with Python and
+          associated libraries.
         </Text>
       </Box>
       <Box>

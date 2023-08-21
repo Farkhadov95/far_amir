@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
-import picture from "../../public/DSC_35817.webp";
+import picture from "/DSC_35817.webp";
 import dev from "../assets/dev.json";
 
 const HomePage = () => {
@@ -67,7 +67,9 @@ const HomePage = () => {
             backgroundColor="orange.300"
             onClick={() => navigate("/resume")}
           >
-            <Text>Resume</Text>
+            <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
+              Resume
+            </Text>
           </Box>
           <Box
             border="2px solid black"
@@ -81,7 +83,9 @@ const HomePage = () => {
             backgroundColor="red.300"
             onClick={() => navigate("/projects")}
           >
-            <Text>Projects</Text>
+            <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
+              Projects
+            </Text>
           </Box>
           <Box
             border="2px solid black"
@@ -92,10 +96,12 @@ const HomePage = () => {
             display="flex"
             alignItems="center"
             justifyContent="center"
-            backgroundColor="teal.200"
+            backgroundColor="teal.300"
             onClick={() => navigate("/about")}
           >
-            <Text>About</Text>
+            <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
+              About
+            </Text>
           </Box>
         </Box>
       </Box>
