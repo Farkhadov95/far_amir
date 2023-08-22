@@ -66,6 +66,7 @@ const HomePage = () => {
             justifyContent="center"
             backgroundColor="orange.300"
             onClick={() => navigate("/resume")}
+            cursor="pointer"
           >
             <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
               Resume
@@ -82,6 +83,7 @@ const HomePage = () => {
             justifyContent="center"
             backgroundColor="red.300"
             onClick={() => navigate("/projects")}
+            cursor="pointer"
           >
             <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
               Projects
@@ -98,6 +100,7 @@ const HomePage = () => {
             justifyContent="center"
             backgroundColor="teal.300"
             onClick={() => navigate("/about")}
+            cursor="pointer"
           >
             <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
               About
