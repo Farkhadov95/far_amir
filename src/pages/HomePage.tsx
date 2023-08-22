@@ -18,7 +18,7 @@ const HomePage = () => {
       <Box
         order={{ base: 1, md: 0 }}
         borderRadius="50%"
-        width={{ base: "80vw", md: "45vw", lg: "45vw" }}
+        width={{ base: "80vw", md: "45vw", lg: "35vw", xl: "30vw" }}
         border="2px solid black"
         marginBottom={{ base: 5, md: 0 }}
       >
@@ -27,7 +27,7 @@ const HomePage = () => {
       <Box
         display="flex"
         flexDirection="column"
-        width={{ base: "80vw", md: "45vw", lg: "45vw" }}
+        width={{ base: "80vw", md: "45vw", lg: "35vw", xl: "30vw" }}
         justifyContent="space-between"
       >
         <Box display="flex" alignItems="center" width="100%">
