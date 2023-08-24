@@ -9,7 +9,7 @@ const AboutPage = () => {
         <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
           About
         </Heading>
-        <Box width="25%">
+        <Box width={{ base: "25%", xl: "15%" }}>
           <Lottie animationData={about} />
         </Box>
       </Box>
