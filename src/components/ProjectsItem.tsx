@@ -1,4 +1,12 @@
-import { Box, Heading, Text, Image, Link, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Image,
+  Link,
+  Button,
+  Divider,
+} from "@chakra-ui/react";
 
 interface Props {
   title: string;
@@ -6,9 +14,25 @@ interface Props {
   github: string;
   live: string;
   image: string;
+  tools: string[];
+  features: string[];
 }
 
-const ProjectsItem = ({ title, description, github, live, image }: Props) => {
+const ProjectsItem = ({
+  title,
+  description,
+  github,
+  live,
+  image,
+  tools,
+  features,
+}: Props) => {
+  const toolsSting = tools.map((tool) => JSON.stringify(tool));
+  const toolsList = toolsSting.join(", ").replace(/"/g, "");
+
+  const featuresSting = features.map((feature) => JSON.stringify(feature));
+  const featuresList = featuresSting.join(", ").replace(/"/g, "");
+
   return (
     <Box
       display="flex"
@@ -28,8 +52,14 @@ const ProjectsItem = ({ title, description, github, live, image }: Props) => {
           <Heading fontSize="xl" paddingBottom={5}>
             {title}
           </Heading>
-          <Text paddingBottom={5} textAlign="justify">
+          <Text paddingBottom={3} textAlign="justify">
             {description}
+          </Text>
+          <Text paddingBottom={3} textAlign="justify">
+            <Text as="b">Tools:</Text> {toolsList}
+          </Text>
+          <Text paddingBottom={5} textAlign="justify">
+            <Text as="b">Features:</Text> {featuresList}
           </Text>
         </Box>
         <Box>

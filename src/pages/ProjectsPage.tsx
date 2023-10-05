@@ -26,6 +26,17 @@ const ProjectsPage = () => {
         github="https://github.com/Farkhadov95/game-hub"
         live="https://game-hub-two-snowy.vercel.app"
         image={gamehub}
+        tools={[
+          "HTML",
+          "CSS",
+          "TypeScript",
+          "React",
+          "Redux",
+          "Axios",
+          "React Query",
+          "Zustand",
+        ]}
+        features={["Fetching and Posting Data", "Sorting", "Searching"]}
       />
       <Divider orientation="horizontal" />
       <ProjectsItem
@@ -34,6 +45,12 @@ const ProjectsPage = () => {
         github="https://github.com/Farkhadov95/853355-what-to-watch-12"
         live="https://farkhadov95.github.io/853355-what-to-watch-12/"
         image={wtw}
+        tools={["HTML", "CSS", "TypeScript", "React", "Redux", "Axios"]}
+        features={[
+          "Fetching and Posting Data",
+          "Sorting",
+          "Form Validation, Authentication using Token",
+        ]}
       />
       <Divider orientation="horizontal" />
       <ProjectsItem
@@ -42,6 +59,8 @@ const ProjectsPage = () => {
         github="https://github.com/Farkhadov95/853355-kekstagram-29"
         live="https://farkhadov95.github.io/853355-kekstagram-29/"
         image={kekstagram}
+        tools={["HTML", "CSS", "JavaScript"]}
+        features={["Fetching and Posting Data", "Sorting", "Form Validation"]}
       />
       <Divider orientation="horizontal" />
       <ProjectsItem
@@ -50,6 +69,8 @@ const ProjectsPage = () => {
         github="https://github.com/Farkhadov95/853355-big-trip-simple-19"
         live="https://farkhadov95.github.io/853355-big-trip-simple-19/build/"
         image={bigtrip}
+        tools={["HTML", "CSS", "JavaScript", "OOP", "MVP"]}
+        features={["Fetching and Posting Data", "Sorting"]}
       />
       <Divider orientation="horizontal" />
       <ProjectsItem
@@ -58,6 +79,8 @@ const ProjectsPage = () => {
         github="https://github.com/Farkhadov95/853355-sedona-19"
         live="https://farkhadov95.github.io/853355-sedona-19/source/"
         image={sedona}
+        tools={["HTML", "CSS", "JavaScript"]}
+        features={["Pixel Perfect", "Vanilla HTML and CSS"]}
       />
     </Box>
   );
