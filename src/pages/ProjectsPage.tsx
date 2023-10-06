@@ -79,8 +79,8 @@ const ProjectsPage = () => {
         github="https://github.com/Farkhadov95/853355-sedona-19"
         live="https://farkhadov95.github.io/853355-sedona-19/source/"
         image={sedona}
-        tools={["HTML", "CSS", "JavaScript"]}
-        features={["Pixel Perfect", "Vanilla HTML and CSS"]}
+        tools={["HTML", "CSS", "Less", "Gulp", "JavaScript"]}
+        features={["Pixel Perfect", "Semantic markup"]}
       />
     </Box>
   );
