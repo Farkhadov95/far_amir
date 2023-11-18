@@ -60,7 +60,7 @@ const ProjectsPage = () => {
         title="GameHub"
         description={[
           "State Management using Zustand",
-          "Fetching and Posting Data using React Query",
+          "Fetching and Posting Data using React Query and Axios",
           "Navigation using React Router",
           "Filtration by genre",
           "Sorting by platform",
