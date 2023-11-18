@@ -90,6 +90,7 @@ const ProjectsPage = () => {
         description={[
           "State Management using Redux",
           "Axios for retrieving and sending data from/to API",
+          "Navigation using React Router",
           "Sorting by genre",
           "Reviews: retriving and posting reviews",
           "Form Validation",
