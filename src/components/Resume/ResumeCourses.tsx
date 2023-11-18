@@ -19,6 +19,11 @@ const ResumeCourses = () => {
       </Box>
       <Box width={{ base: "100%", md: "100%", lg: "60%" }}>
         <ResumeItem
+          date="September 2022 - August 2023"
+          title="HTML Academy"
+          description="Profession 'React Developer'"
+        />
+        <ResumeItem
           date="February - May 2023"
           title="HTML Academy"
           description="React. Development of Complex Front-end Applications."
