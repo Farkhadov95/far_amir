@@ -4,6 +4,7 @@ import {
   Heading,
   HStack,
   Link,
+  SimpleGrid,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -15,19 +16,18 @@ const Footer = () => {
     <VStack justifyContent="space-between">
       <Divider orientation="horizontal" />
       <HStack
-        marginTop={5}
+        marginTop={{ base: 2, md: 5 }}
+        justify={"space-between"}
         width={"100%"}
-        justifyContent={"space-between"}
-        gap={{ base: 3, md: 0 }}
         flexDirection={{ base: "column", md: "row" }}
       >
-        <Box>
-          <Heading fontSize="sm">Email</Heading>
+        <HStack>
+          <Heading fontSize="sm">Email:</Heading>
           <Text>Farkhadov950405@mail.com</Text>
-        </Box>
-        <Box>
-          <Heading fontSize="sm">Social Media</Heading>
-          <Box display="flex" width="100%" gap={2} marginTop={1}>
+        </HStack>
+        <HStack>
+          <Heading fontSize="sm">Social Media:</Heading>
+          <Box display="flex" gap={2} marginTop={1}>
             <Link href="https://www.linkedin.com/in/amir-farkhadov-513601222/">
               <BsLinkedin />
             </Link>
@@ -41,13 +41,7 @@ const Footer = () => {
               <BsGithub />
             </Link>
           </Box>
-        </Box>
-        <Box>
-          <Box display="flex" gap={1} alignItems="center">
-            <BiCopyright />
-            <Heading fontSize="sm">2023 by Amir Farkhadov.</Heading>
-          </Box>
-        </Box>
+        </HStack>
       </HStack>
     </VStack>
   );

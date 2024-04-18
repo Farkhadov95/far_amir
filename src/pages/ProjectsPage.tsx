@@ -39,7 +39,7 @@ const ProjectsPage = () => {
           <Tab>Practice</Tab>
         </TabList>
         <TabPanels>
-          <TabPanel>
+          <TabPanel paddingBottom={0}>
             {projects.map((project, index) => (
               <Box key={project.id}>
                 <ProjectsItem project={project} />
@@ -49,7 +49,7 @@ const ProjectsPage = () => {
               </Box>
             ))}
           </TabPanel>
-          <TabPanel>
+          <TabPanel paddingBottom={0}>
             {eduProjects.map((project, index) => (
               <Box key={project.id}>
                 <ProjectsItem project={project} />
