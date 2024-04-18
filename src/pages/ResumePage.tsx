@@ -9,7 +9,10 @@ import { courses, education, work } from "../data/courses";
 
 const ResumePage = () => {
   return (
-    <Box padding={{ base: "20px", md: "50px" }}>
+    <Box
+      padding={{ base: "0", sm: "20px", md: "50px" }}
+      paddingY={{ base: "20px", sm: "20px", md: "50px" }}
+    >
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Box display="flex" alignItems="center" width="100%">
           <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>

@@ -20,10 +20,10 @@ const AboutPage = () => {
         <Text textAlign="justify" paddingBottom={2}>
           I am a passionate and dedicated Front-end Developer with a strong
           foundation in crafting responsive web applications using a suite of
-          modern tools and technologies, including HTML, CSS, JavaScript, and
-          React. Holding a Master's degree in Computer Science, my academic the
-          background is further bolstered by a range of specialized developer
-          courses.
+          modern tools and technologies, including HTML, CSS, JavaScript,
+          TypeScript, and React. Holding a Master's degree in Computer Science,
+          my academic the background is further bolstered by a range of
+          specialized developer courses.
         </Text>
         <Text textAlign="justify">
           Over the years, I have worked on various projects, and I always tried
