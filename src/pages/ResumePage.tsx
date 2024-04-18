@@ -1,5 +1,5 @@
 import { Heading, Box, Divider, Button, Link, Text } from "@chakra-ui/react";
-
+import { RxDownload } from "react-icons/rx";
 import ResumeSkills from "../components/Resume/ResumeSkills";
 import ResumeEducation from "../components/Resume/ResumeEducation";
 import ResumeCourses from "../components/Resume/ResumeCourses";
@@ -20,7 +20,10 @@ const ResumePage = () => {
           </Box>
         </Box>
         <Button as={Link} href={cv} download={true}>
-          <Text fontSize={{ base: "xs", md: "md" }}>Download CV</Text>
+          <RxDownload size="1.5em" />
+          <Text fontSize={{ base: "xs", md: "md" }} ml={1}>
+            Download
+          </Text>
         </Button>
       </Box>
       <ResumeSkills />

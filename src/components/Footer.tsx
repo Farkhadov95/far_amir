@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 import { BsLinkedin, BsFacebook, BsTelegram, BsGithub } from "react-icons/bs";
 import { BiCopyright } from "react-icons/bi";
-import React from "react";
 
 const Footer = () => {
   return (
@@ -20,6 +19,7 @@ const Footer = () => {
         width={"100%"}
         justifyContent={"space-between"}
         gap={{ base: 3, md: 0 }}
+        flexDirection={{ base: "column", md: "row" }}
       >
         <Box>
           <Heading fontSize="sm">Email</Heading>
