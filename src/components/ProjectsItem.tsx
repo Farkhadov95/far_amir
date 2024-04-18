@@ -68,7 +68,7 @@ const ProjectsItem = ({ project }: Props) => {
         </Box>
       </SimpleGrid>
 
-      <HStack gap={3} mt={{ base: 0 }}>
+      <HStack gap={3} mt={{ base: 5 }}>
         <Button as={Link} href={github} fontSize={{ base: "12px", sm: "16px" }}>
           Github
         </Button>
