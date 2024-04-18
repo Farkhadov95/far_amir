@@ -118,7 +118,7 @@ const projects: Project[] = [
 const eduProjects: Project[] = [
   {
     id: 5,
-    title: "Camera Online Store",
+    title: "Camera Store",
     type: ProjectType.front,
     description: [
       "State Management using Redux",
