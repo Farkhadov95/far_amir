@@ -10,7 +10,7 @@ import { courses, education, work } from "../data/courses";
 const ResumePage = () => {
   return (
     <Box
-      padding={{ base: "0", sm: "20px", md: "50px" }}
+      paddingX={{ base: "0", sm: "20px", md: "50px" }}
       paddingY={{ base: "20px", sm: "20px", md: "50px" }}
     >
       <Box display="flex" justifyContent="space-between" alignItems="center">

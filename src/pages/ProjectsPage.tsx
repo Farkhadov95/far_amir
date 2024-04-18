@@ -15,8 +15,16 @@ import { projects, eduProjects } from "../data/projects";
 
 const ProjectsPage = () => {
   return (
-    <Box padding={{ base: "20px", md: "50px" }}>
-      <Box display="flex" alignItems="center" width="100%">
+    <Box
+      paddingX={{ base: "0", sm: "20px" }}
+      paddingTop={{ base: "20px", sm: "20px" }}
+    >
+      <Box
+        display="flex"
+        alignItems="center"
+        width="100%"
+        mb={{ base: 5, md: 0 }}
+      >
         <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
           Projects
         </Heading>
@@ -36,7 +44,7 @@ const ProjectsPage = () => {
               <Box key={project.id}>
                 <ProjectsItem project={project} />
                 {index !== projects.length - 1 && (
-                  <Divider orientation="horizontal" />
+                  <Divider orientation="horizontal" mb={{ base: 5 }} />
                 )}
               </Box>
             ))}
@@ -46,7 +54,7 @@ const ProjectsPage = () => {
               <Box key={project.id}>
                 <ProjectsItem project={project} />
                 {index !== eduProjects.length - 1 && (
-                  <Divider orientation="horizontal" />
+                  <Divider orientation="horizontal" mb={{ base: 5 }} />
                 )}
               </Box>
             ))}

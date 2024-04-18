@@ -16,6 +16,7 @@ import {
   Box,
   Heading,
   Text,
+  HStack,
 } from "@chakra-ui/react";
 import { MdMenu } from "react-icons/md";
 import { Link as RouterLink } from "react-router-dom";
@@ -27,7 +28,13 @@ const DrawerNavigation = () => {
   const btnRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <>
+    <HStack justify={"space-between"}>
+      <Box display="flex" gap={2} alignItems="center">
+        <BsFillCircleFill fill="teal" />
+        <ChakraLink as={RouterLink} to="/" onClick={onClose}>
+          <Heading fontSize="lg">Amir Farkhadov</Heading>
+        </ChakraLink>
+      </Box>
       <Button
         ref={btnRef}
         color="brand.900"
@@ -77,7 +84,7 @@ const DrawerNavigation = () => {
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
-    </>
+    </HStack>
   );
 };
 

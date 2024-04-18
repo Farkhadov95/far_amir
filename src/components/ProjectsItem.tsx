@@ -10,6 +10,7 @@ import {
   ListItem,
   HStack,
   Tag,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { Project } from "../data/projects";
 
@@ -25,59 +26,65 @@ const ProjectsItem = ({ project }: Props) => {
 
   return (
     <Box
-      display="flex"
-      justifyContent="space-between"
-      marginTop={{ base: 5, md: "40px" }}
-      marginBottom={{ base: 5, md: "40px" }}
-      flexDirection={{ base: "column", md: "row" }}
+      marginBottom={{ base: 5 }}
+      flexDirection={{ base: "column", lg: "row" }}
     >
-      <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="space-between"
-        width={{ base: "100%", md: "45%" }}
-        marginBottom={{ base: 5, md: 0 }}
-      >
+      <HStack mb={{ base: 5, md: 5 }}>
+        <Heading fontSize="xl">{title}</Heading>
+        <Tag colorScheme="green" fontSize={{ base: "10px", md: "14px" }}>
+          {type}
+        </Tag>
+      </HStack>
+
+      <SimpleGrid columns={{ base: 1, lg: 2 }} gap={{ base: 2, md: 5, lg: 10 }}>
+        <Image
+          src={image}
+          border={"1px solid"}
+          borderRadius={"10px"}
+          width={{ base: "100%" }}
+          height={{ base: "auto" }}
+          objectFit="cover"
+        />
+
         <Box>
-          <Heading fontSize="xl" paddingBottom={5}>
-            {title}
-            <Tag ml={2} colorScheme="green">
-              {type}
-            </Tag>
-          </Heading>
           <Box paddingBottom={3} textAlign="justify">
             <Text as="b">Features:</Text>
             <UnorderedList>
               {description.map((item, index) => (
-                <ListItem key={index}>{item}</ListItem>
+                <ListItem key={index} fontSize={{ base: "14px", sm: "16px" }}>
+                  {item}
+                </ListItem>
               ))}
             </UnorderedList>
           </Box>
-          <Text paddingBottom={3} textAlign="justify">
+
+          <Text
+            paddingBottom={3}
+            textAlign="justify"
+            fontSize={{ base: "12px", sm: "16px" }}
+          >
             <Text as="b">Tools:</Text> {toolsList}
           </Text>
         </Box>
-        <HStack gap={3}>
-          <Button as={Link} href={github}>
-            Github
+      </SimpleGrid>
+
+      <HStack gap={3} mt={{ base: 0 }}>
+        <Button as={Link} href={github} fontSize={{ base: "12px", sm: "16px" }}>
+          Github
+        </Button>
+        <Button as={Link} href={live} fontSize={{ base: "12px", sm: "16px" }}>
+          Live
+        </Button>
+        {backend && (
+          <Button
+            as={Link}
+            href={backend}
+            fontSize={{ base: "12px", sm: "16px" }}
+          >
+            Server
           </Button>
-          <Button as={Link} href={live}>
-            Live
-          </Button>
-          {backend && (
-            <Button as={Link} href={backend}>
-              Server
-            </Button>
-          )}
-        </HStack>
-      </Box>
-      <Image
-        src={image}
-        width={{ base: "100%", md: "45%" }}
-        height={{ base: "100%" }}
-        // height="auto"
-        objectFit="cover"
-      />
+        )}
+      </HStack>
     </Box>
   );
 };
