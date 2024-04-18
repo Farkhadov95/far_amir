@@ -26,7 +26,7 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    id: 7,
+    id: 1,
     title: "CollectionHub",
     type: ProjectType.full,
     description: [
@@ -54,6 +54,7 @@ const projects: Project[] = [
       "CSS",
       "TypeScript",
       "React",
+      "Chakra UI",
       "Zustand",
       "i18next",
       "Axios",
@@ -67,7 +68,56 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 6,
+    id: 2,
+    title: "GameHub",
+    type: ProjectType.front,
+    description: [
+      "State Management using Zustand",
+      "Fetching and Posting Data using React Query and Axios",
+      "Navigation using React Router",
+      "Filtration by genre",
+      "Sorting by platform",
+      "Searching",
+      "Responsive UI",
+      "Dark Mode",
+    ],
+    github: "https://github.com/Farkhadov95/game-hub",
+    live: "https://game-hub-two-snowy.vercel.app",
+    backend: "",
+    image: gamehub,
+    tools: [
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "React",
+      "Chakra UI",
+      "Redux",
+      "Axios",
+      "React Query",
+      "Zustand",
+    ],
+  },
+  {
+    id: 3,
+    title: "Sedona",
+    type: ProjectType.front,
+    description: [
+      "Pixel Perfect",
+      "Semantic markup",
+      "Responsive UI",
+      "Progressive enhancement",
+    ],
+    github: "https://github.com/Farkhadov95/853355-sedona-19",
+    live: "https://farkhadov95.github.io/853355-sedona-19/source/",
+    backend: "",
+    image: sedona,
+    tools: ["HTML", "CSS", "Less", "Gulp", "JavaScript"],
+  },
+];
+
+const eduProjects: Project[] = [
+  {
+    id: 5,
     title: "Camera Online Store",
     type: ProjectType.front,
     description: [
@@ -100,36 +150,6 @@ const projects: Project[] = [
       "Swiper JS",
       "React Testing Library",
       "Vitest",
-    ],
-  },
-  {
-    id: 5,
-    title: "GameHub",
-    type: ProjectType.front,
-    description: [
-      "State Management using Zustand",
-      "Fetching and Posting Data using React Query and Axios",
-      "Navigation using React Router",
-      "Filtration by genre",
-      "Sorting by platform",
-      "Ordering",
-      "Searching",
-      "Responsive UI",
-      "Dark Mode",
-    ],
-    github: "https://github.com/Farkhadov95/game-hub",
-    live: "https://game-hub-two-snowy.vercel.app",
-    backend: "",
-    image: gamehub,
-    tools: [
-      "HTML",
-      "CSS",
-      "TypeScript",
-      "React",
-      "Redux",
-      "Axios",
-      "React Query",
-      "Zustand",
     ],
   },
   {
@@ -183,22 +203,6 @@ const projects: Project[] = [
     image: bigtrip,
     tools: ["HTML", "CSS", "JavaScript", "OOP", "MVP"],
   },
-  {
-    id: 1,
-    title: "Sedona",
-    type: ProjectType.front,
-    description: [
-      "Pixel Perfect",
-      "Semantic markup",
-      "Responsive UI",
-      "Progressive enhancement",
-    ],
-    github: "https://github.com/Farkhadov95/853355-sedona-19",
-    live: "https://farkhadov95.github.io/853355-sedona-19/source/",
-    backend: "",
-    image: sedona,
-    tools: ["HTML", "CSS", "Less", "Gulp", "JavaScript"],
-  },
 ];
 
-export default projects;
+export { projects, eduProjects };

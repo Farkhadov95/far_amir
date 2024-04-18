@@ -1,8 +1,17 @@
-import { Box, Divider, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+} from "@chakra-ui/react";
 import ProjectsItem from "../components/ProjectsItem";
 import Lottie from "lottie-react";
-import projects from "../assets/projects.json";
-import projectsItems from "../data/projects";
+import projectsAni from "../assets/projects.json";
+import { projects, eduProjects } from "../data/projects";
 
 const ProjectsPage = () => {
   return (
@@ -12,18 +21,38 @@ const ProjectsPage = () => {
           Projects
         </Heading>
         <Box width={{ base: "25%", xl: "15%" }}>
-          <Lottie animationData={projects} />
+          <Lottie animationData={projectsAni} />
         </Box>
       </Box>
 
-      {projectsItems.map((project, index) => (
-        <Box key={project.id}>
-          <ProjectsItem project={project} />
-          {index !== projectsItems.length - 1 && (
-            <Divider orientation="horizontal" />
-          )}
-        </Box>
-      ))}
+      <Tabs isFitted variant="enclosed" colorScheme="green">
+        <TabList mb="1em">
+          <Tab>Personal</Tab>
+          <Tab>Practice</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            {projects.map((project, index) => (
+              <Box key={project.id}>
+                <ProjectsItem project={project} />
+                {index !== projects.length - 1 && (
+                  <Divider orientation="horizontal" />
+                )}
+              </Box>
+            ))}
+          </TabPanel>
+          <TabPanel>
+            {eduProjects.map((project, index) => (
+              <Box key={project.id}>
+                <ProjectsItem project={project} />
+                {index !== eduProjects.length - 1 && (
+                  <Divider orientation="horizontal" />
+                )}
+              </Box>
+            ))}
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
     </Box>
   );
 };

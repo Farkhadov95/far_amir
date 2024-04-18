@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import picture from "/DSC_35817.webp";
 import dev from "../assets/dev.json";
+import HomeDots from "../components/HomeDots";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -41,9 +42,9 @@ const HomePage = () => {
         <Box>
           <Heading fontSize="2xl">My name is Amir Farkhadov.</Heading>
           <Text
-            fontSize="lg"
+            fontSize={{ base: "sm", md: "lg" }}
             marginTop={2}
-            marginBottom={10}
+            marginBottom={{ base: 5, md: 10 }}
             textAlign="justify"
           >
             I am a Front-end Developer. I have a strong passion for creating
@@ -55,57 +56,9 @@ const HomePage = () => {
           </Text>
         </Box>
         <Box display="flex" gap={2} justifyContent="center">
-          <Box
-            border="2px solid black"
-            borderRadius="50%"
-            padding="2"
-            width="100px"
-            height="100px"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            backgroundColor="orange.300"
-            onClick={() => navigate("/resume")}
-            cursor="pointer"
-          >
-            <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
-              Resume
-            </Text>
-          </Box>
-          <Box
-            border="2px solid black"
-            borderRadius="50%"
-            padding="2"
-            width="100px"
-            height="100px"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            backgroundColor="red.300"
-            onClick={() => navigate("/projects")}
-            cursor="pointer"
-          >
-            <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
-              Projects
-            </Text>
-          </Box>
-          <Box
-            border="2px solid black"
-            borderRadius="50%"
-            padding="2"
-            width="100px"
-            height="100px"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            backgroundColor="teal.300"
-            onClick={() => navigate("/about")}
-            cursor="pointer"
-          >
-            <Text fontWeight="bold" textTransform="uppercase" fontSize={15}>
-              About
-            </Text>
-          </Box>
+          <HomeDots title="Projects" color="red" />
+          <HomeDots title="Resume" color="teal" />
+          <HomeDots title="About" color="orange" />
         </Box>
       </Box>
     </Box>
