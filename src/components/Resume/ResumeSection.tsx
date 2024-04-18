@@ -1,7 +1,14 @@
 import { Heading, Box, Divider } from "@chakra-ui/react";
 import ResumeItem from "./ResumeItem";
+import { Course, education } from "../../data/courses";
+import { Skill } from "../../data/skills";
 
-const ResumeEducation = () => {
+type Props = {
+  title: string;
+  items: Course[];
+};
+
+const ResumeSection = ({ title, items }: Props) => {
   return (
     <Box
       display="flex"
@@ -14,23 +21,16 @@ const ResumeEducation = () => {
     >
       <Box>
         <Heading as="h2" size="md">
-          Education
+          {title}
         </Heading>
       </Box>
       <Box width={{ base: "100%", md: "100%", lg: "60%" }}>
-        <ResumeItem
-          date="2021-2022"
-          title="University of Greenwich"
-          description="MSc Computer Science"
-        />
-        <ResumeItem
-          date="2014-2018"
-          title="Bangor University"
-          description="BSc Industrial Management"
-        />
+        {items.map((item, index) => (
+          <ResumeItem key={index} course={item} />
+        ))}
       </Box>
     </Box>
   );
 };
 
-export default ResumeEducation;
+export default ResumeSection;

@@ -1,13 +1,13 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
+import { Course } from "../../data/courses";
 
 interface Props {
-  date: string;
-  title: string;
-  description: string;
+  course: Course;
 }
 
-const ResumeItem = ({ date, title, description }: Props) => {
+const ResumeItem = ({ course }: Props) => {
+  const { date, title, description } = course;
   return (
     <Box
       display="flex"

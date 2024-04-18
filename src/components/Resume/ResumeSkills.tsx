@@ -25,7 +25,10 @@ const ResumeSkills = () => {
           Skill & Expertise
         </Heading>
       </Box>
-      <SimpleGrid columns={{ base: 2, md: 3 }} columnGap={{ base: 2, md: 5 }}>
+      <SimpleGrid
+        columns={{ base: 1, sm: 2, md: 3 }}
+        columnGap={{ base: 2, md: 5 }}
+      >
         {skills.map((skill, index) => (
           <ResumeSkillsItem key={index} icon={skill.icon} name={skill.name} />
         ))}

@@ -30,7 +30,7 @@ const HomePage = () => {
         width={{ base: "80vw", md: "45vw", lg: "35vw", xl: "30vw" }}
         justifyContent="space-between"
       >
-        <Box display="flex" alignItems="center" width="100%">
+        <Box display="flex" alignItems="center" width="100%" mt={5}>
           <Heading fontSize={{ base: "6xl", md: "6xl", lg: "8xl" }}>
             Hello
           </Heading>
@@ -46,12 +46,12 @@ const HomePage = () => {
             marginBottom={10}
             textAlign="justify"
           >
-            I am a Front-end Developer based in the UK. I have a strong passion
-            for creating dynamic and user-friendly websites. My experience in
-            HTML, CSS, JavaScript, TypeScript, and React has enabled me to
-            develop responsive and visually appealing web applications. I
-            prioritize intuitive user interfaces and strive to deliver
-            high-quality code with optimal functionality.
+            I am a Front-end Developer. I have a strong passion for creating
+            dynamic and user-friendly websites. My experience in HTML, CSS,
+            JavaScript, TypeScript, and React has enabled me to develop
+            responsive and visually appealing web applications. I prioritize
+            intuitive user interfaces and strive to deliver high-quality code
+            with optimal functionality.
           </Text>
         </Box>
         <Box display="flex" gap={2} justifyContent="center">

@@ -1,11 +1,11 @@
-import { Heading, Box, Divider, Button, Link, Text } from "@chakra-ui/react";
+import { Heading, Box, Divider, Button, Link, Icon } from "@chakra-ui/react";
 import { RxDownload } from "react-icons/rx";
 import ResumeSkills from "../components/Resume/ResumeSkills";
-import ResumeEducation from "../components/Resume/ResumeEducation";
-import ResumeCourses from "../components/Resume/ResumeCourses";
 import Lottie from "lottie-react";
 import book from "../assets/bookForDark.json";
 import cv from "/Amir Farkhadov's CV.pdf";
+import ResumeSection from "../components/Resume/ResumeSection";
+import { courses, education, work } from "../data/courses";
 
 const ResumePage = () => {
   return (
@@ -19,18 +19,23 @@ const ResumePage = () => {
             <Lottie animationData={book} />
           </Box>
         </Box>
-        <Button as={Link} href={cv} download={true}>
-          <RxDownload size="1.5em" />
-          <Text fontSize={{ base: "xs", md: "md" }} ml={1}>
-            Download
-          </Text>
+        <Button
+          colorScheme="teal"
+          variant={"outline"}
+          as={Link}
+          href={cv}
+          download={true}
+        >
+          <Icon as={RxDownload} size="1em" />
         </Button>
       </Box>
       <ResumeSkills />
       <Divider orientation="horizontal" marginBottom={5} />
-      <ResumeEducation />
+      <ResumeSection title="Work Experience" items={work} />
       <Divider orientation="horizontal" marginBottom={5} />
-      <ResumeCourses />
+      <ResumeSection title="Education" items={education} />
+      <Divider orientation="horizontal" marginBottom={5} />
+      <ResumeSection title="Courses" items={courses} />
     </Box>
   );
 };
