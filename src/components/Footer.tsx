@@ -4,19 +4,17 @@ import {
   Heading,
   HStack,
   Link,
-  SimpleGrid,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { BsLinkedin, BsFacebook, BsTelegram, BsGithub } from "react-icons/bs";
-import { BiCopyright } from "react-icons/bi";
 
 const Footer = () => {
   return (
     <VStack justifyContent="space-between">
       <Divider orientation="horizontal" />
       <HStack
-        marginTop={{ base: 2, md: 5 }}
+        marginY={{ base: 2, md: 5 }}
         justify={"space-between"}
         width={"100%"}
         flexDirection={{ base: "column", md: "row" }}

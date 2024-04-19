@@ -20,7 +20,12 @@ const Layout = () => {
     };
   }, []);
   return (
-    <Box paddingX={{ base: 5, md: 10 }} paddingY={5}>
+    <Box
+      boxSizing={"border-box"}
+      paddingX={{ base: 5, md: 10 }}
+      paddingTop={5}
+      minHeight="100vh"
+    >
       {isSmallScreen ? <DrawerNavigation /> : <Navbar />}
       <Outlet />
       <Footer />
