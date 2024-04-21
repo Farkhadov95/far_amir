@@ -15,7 +15,7 @@ export enum ProjectType {
 }
 
 export type Project = {
-  id: string;
+  id: number;
   title: string;
   type: ProjectType;
   description: string[];
@@ -28,7 +28,7 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    id: useId(),
+    id: 3,
     title: "CollectionHub",
     type: ProjectType.full,
     description: [
@@ -70,7 +70,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: useId(),
+    id: 2,
     title: "GameHub",
     type: ProjectType.front,
     description: [
@@ -100,7 +100,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: useId(),
+    id: 1,
     title: "Sedona",
     type: ProjectType.front,
     description: [
@@ -119,7 +119,7 @@ const projects: Project[] = [
 
 const eduProjects: Project[] = [
   {
-    id: useId(),
+    id: 5,
     title: "Vue Weather",
     type: ProjectType.front,
     description: [
@@ -135,7 +135,7 @@ const eduProjects: Project[] = [
     tools: ["HTML", "CSS", "TailwindCSS", "JavaScript", "Vue.js", "Axios"],
   },
   {
-    id: useId(),
+    id: 4,
     title: "Camera Store",
     type: ProjectType.front,
     description: [
@@ -171,7 +171,7 @@ const eduProjects: Project[] = [
     ],
   },
   {
-    id: useId(),
+    id: 3,
     title: "WhatToWatch",
     type: ProjectType.front,
     description: [
@@ -190,7 +190,7 @@ const eduProjects: Project[] = [
     tools: ["HTML", "CSS", "TypeScript", "React", "Redux", "Axios"],
   },
   {
-    id: useId(),
+    id: 2,
     title: "Kekstagram",
     type: ProjectType.front,
     description: [
@@ -207,7 +207,7 @@ const eduProjects: Project[] = [
     tools: ["HTML", "CSS", "JavaScript", "NoUiSlider"],
   },
   {
-    id: useId(),
+    id: 1,
     title: "Big Trip",
     type: ProjectType.front,
     description: [
