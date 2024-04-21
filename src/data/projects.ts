@@ -5,6 +5,8 @@ import kekstagram from "/kekstagram.webp";
 import bigtrip from "/big-trip.webp";
 import sedona from "/sedona.webp";
 import ch from "/ch.webp";
+import vue_weather from "/vue_weather.webp";
+import { useId } from "react";
 
 export enum ProjectType {
   front = "Frontend",
@@ -13,7 +15,7 @@ export enum ProjectType {
 }
 
 export type Project = {
-  id: number;
+  id: string;
   title: string;
   type: ProjectType;
   description: string[];
@@ -26,7 +28,7 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    id: 1,
+    id: useId(),
     title: "CollectionHub",
     type: ProjectType.full,
     description: [
@@ -68,7 +70,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: useId(),
     title: "GameHub",
     type: ProjectType.front,
     description: [
@@ -98,7 +100,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: useId(),
     title: "Sedona",
     type: ProjectType.front,
     description: [
@@ -117,7 +119,31 @@ const projects: Project[] = [
 
 const eduProjects: Project[] = [
   {
-    id: 5,
+    id: useId(),
+    title: "Vue Weather",
+    type: ProjectType.front,
+    description: [
+      "Vue.js as project framework",
+      "TailwindCSS for styling",
+      "Axios for retrieving and sending data from/to API",
+      "OpenWeather API for weather data",
+    ],
+    github: "https://github.com/Farkhadov95/vue-weather",
+    live: "https://vue-weather-sooty.vercel.app",
+    backend: "",
+    image: vue_weather,
+    tools: [
+      "HTML",
+      "CSS",
+      "TailwindCSS",
+      "JavaScript",
+      "Vue.js",
+      "Axios",
+      "REST API",
+    ],
+  },
+  {
+    id: useId(),
     title: "Camera Store",
     type: ProjectType.front,
     description: [
@@ -153,7 +179,7 @@ const eduProjects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: useId(),
     title: "WhatToWatch",
     type: ProjectType.front,
     description: [
@@ -169,10 +195,10 @@ const eduProjects: Project[] = [
     live: "https://farkhadov95.github.io/853355-what-to-watch-12/",
     backend: "",
     image: wtw,
-    tools: ["HTML", "CSS", "TypeScript", "React", "Redux", "Axios"],
+    tools: ["HTML", "CSS", "TypeScript", "React", "Redux", "Axios", "REST API"],
   },
   {
-    id: 3,
+    id: useId(),
     title: "Kekstagram",
     type: ProjectType.front,
     description: [
@@ -186,10 +212,10 @@ const eduProjects: Project[] = [
     live: "https://farkhadov95.github.io/853355-kekstagram-29/",
     backend: "",
     image: kekstagram,
-    tools: ["HTML", "CSS", "JavaScript", "NoUiSlider"],
+    tools: ["HTML", "CSS", "JavaScript", "NoUiSlider", "REST API"],
   },
   {
-    id: 2,
+    id: useId(),
     title: "Big Trip",
     type: ProjectType.front,
     description: [
@@ -201,7 +227,7 @@ const eduProjects: Project[] = [
     live: "https://farkhadov95.github.io/853355-big-trip-simple-19/build/",
     backend: "",
     image: bigtrip,
-    tools: ["HTML", "CSS", "JavaScript", "OOP", "MVP"],
+    tools: ["HTML", "CSS", "JavaScript", "OOP", "MVP", "REST API"],
   },
 ];
 
