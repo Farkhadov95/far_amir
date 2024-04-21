@@ -132,15 +132,7 @@ const eduProjects: Project[] = [
     live: "https://vue-weather-sooty.vercel.app",
     backend: "",
     image: vue_weather,
-    tools: [
-      "HTML",
-      "CSS",
-      "TailwindCSS",
-      "JavaScript",
-      "Vue.js",
-      "Axios",
-      "REST API",
-    ],
+    tools: ["HTML", "CSS", "TailwindCSS", "JavaScript", "Vue.js", "Axios"],
   },
   {
     id: useId(),
@@ -195,7 +187,7 @@ const eduProjects: Project[] = [
     live: "https://farkhadov95.github.io/853355-what-to-watch-12/",
     backend: "",
     image: wtw,
-    tools: ["HTML", "CSS", "TypeScript", "React", "Redux", "Axios", "REST API"],
+    tools: ["HTML", "CSS", "TypeScript", "React", "Redux", "Axios"],
   },
   {
     id: useId(),
@@ -212,7 +204,7 @@ const eduProjects: Project[] = [
     live: "https://farkhadov95.github.io/853355-kekstagram-29/",
     backend: "",
     image: kekstagram,
-    tools: ["HTML", "CSS", "JavaScript", "NoUiSlider", "REST API"],
+    tools: ["HTML", "CSS", "JavaScript", "NoUiSlider"],
   },
   {
     id: useId(),
@@ -227,7 +219,7 @@ const eduProjects: Project[] = [
     live: "https://farkhadov95.github.io/853355-big-trip-simple-19/build/",
     backend: "",
     image: bigtrip,
-    tools: ["HTML", "CSS", "JavaScript", "OOP", "MVP", "REST API"],
+    tools: ["HTML", "CSS", "JavaScript", "OOP", "MVP"],
   },
 ];
 
