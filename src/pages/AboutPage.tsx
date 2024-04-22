@@ -4,7 +4,7 @@ import about from "../assets/about.json";
 
 const AboutPage = () => {
   return (
-    <Box padding={{ base: "20px", md: "50px" }}>
+    <Box flexGrow={1}>
       <Box display="flex" alignItems="center" width="100%">
         <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
           About
