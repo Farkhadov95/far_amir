@@ -15,7 +15,6 @@ const HomePage = () => {
       gap={10}
       justifyContent="center"
       flexGrow={1}
-      // marginY={{ sm: "10vh", md: "20vh" }}
     >
       <Box
         order={{ base: 1, md: 0 }}
