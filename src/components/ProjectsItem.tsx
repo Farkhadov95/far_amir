@@ -72,9 +72,11 @@ const ProjectsItem = ({ project }: Props) => {
         <Button as={Link} href={github} fontSize={{ base: "12px", sm: "16px" }}>
           Github
         </Button>
-        <Button as={Link} href={live} fontSize={{ base: "12px", sm: "16px" }}>
-          Live
-        </Button>
+        {live && (
+          <Button as={Link} href={live} fontSize={{ base: "12px", sm: "16px" }}>
+            Live
+          </Button>
+        )}
         {backend && (
           <Button
             as={Link}

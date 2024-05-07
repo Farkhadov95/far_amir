@@ -5,13 +5,14 @@ import kekstagram from "/kekstagram.webp";
 import bigtrip from "/big-trip.webp";
 import sedona from "/sedona.webp";
 import ch from "/ch.webp";
+import hive from "/hive.webp";
 import vue_weather from "/vue_weather.webp";
-import { useId } from "react";
 
 export enum ProjectType {
   front = "Frontend",
   back = "Backend",
   full = "Fullstack",
+  dev = "Coming soon...",
 }
 
 export type Project = {
@@ -27,6 +28,47 @@ export type Project = {
 };
 
 const projects: Project[] = [
+  {
+    id: 4,
+    title: "Hive - Messenger",
+    type: ProjectType.dev,
+    description: [
+      "State Management using Zustand",
+      "Navigation using React Router",
+      "Full-Text Search to find collections, items or comments",
+      "Multi-language support using i18next",
+      "User Interface using Chakra UI",
+      "Form validation using React Hook Form",
+      "Socket.io to see new comments in real-time",
+      "Axios for retrieving and sending data from/to API",
+      "Promo slider using SwiperJS",
+      "Mongoose/MongoDB for Database",
+      "Express.js as Node.js Framework",
+      "Authentication using JWT",
+      "Filtration and Sorting",
+      "Dark Mode",
+    ],
+    github: "https://github.com/Farkhadov95/hive_messenger",
+    live: "",
+    backend: "",
+    image: hive,
+    tools: [
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "React",
+      "Chakra UI",
+      "Zustand",
+      "Axios",
+      "React Hook Form",
+      "React Query",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "JWT",
+    ],
+  },
   {
     id: 3,
     title: "CollectionHub",
