@@ -69,6 +69,8 @@ const HomePage = () => {
             width={{ base: "80px", sm: "100px" }}
             height={{ base: "80px", sm: "100px" }}
             borderRadius={"50%"}
+            bgColor={"#C44536"}
+            _hover={{ bgColor: "#DC4141" }}
           >
             Projects
           </Button>
@@ -81,6 +83,8 @@ const HomePage = () => {
             width={{ base: "80px", sm: "100px" }}
             height={{ base: "80px", sm: "100px" }}
             borderRadius={"50%"}
+            bgColor={"#219EBC"}
+            _hover={{ bgColor: "#20adcf" }}
           >
             Resume
           </Button>
@@ -89,11 +93,12 @@ const HomePage = () => {
             to={"about"}
             smooth={true}
             duration={500}
-            colorScheme="purple"
             width={{ base: "80px", sm: "100px" }}
             height={{ base: "80px", sm: "100px" }}
             borderRadius={"50%"}
             color={"white"}
+            bgColor={"#9B5DE5"}
+            _hover={{ bgColor: "#ad71f3" }}
           >
             About
           </Button>
