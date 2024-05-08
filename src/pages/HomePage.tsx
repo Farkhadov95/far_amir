@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import Lottie from "lottie-react";
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
@@ -7,7 +6,6 @@ import dev from "../assets/dev.json";
 import "../assets/svg/home-bottom.css";
 
 const HomePage = () => {
-  const navigate = useNavigate();
   return (
     <Box
       display="flex"

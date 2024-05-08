@@ -1,9 +1,9 @@
 import { extendTheme, ThemeConfig } from "@chakra-ui/react";
 import "@fontsource-variable/geologica";
-import { color } from "framer-motion";
 
 const config: ThemeConfig = {
   initialColorMode: "light",
+  useSystemColorMode: false,
 };
 
 const theme = extendTheme({
