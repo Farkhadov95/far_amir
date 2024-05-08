@@ -16,7 +16,7 @@ const ResumeItem = ({ course }: Props) => {
       width="100%"
       alignItems="center"
     >
-      <Text fontSize="sm" width="45%">
+      <Text fontSize="sm" width="45%" fontWeight={"bold"}>
         {date}
       </Text>
       <Box width="50%">

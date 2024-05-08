@@ -31,7 +31,7 @@ const ProjectsItem = ({ project }: Props) => {
     >
       <HStack mb={{ base: 5, md: 5 }}>
         <Heading fontSize="xl">{title}</Heading>
-        <Tag colorScheme="green" fontSize={{ base: "10px", md: "14px" }}>
+        <Tag colorScheme="gray" fontSize={{ base: "10px", md: "14px" }}>
           {type}
         </Tag>
       </HStack>

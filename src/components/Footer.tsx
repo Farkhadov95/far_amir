@@ -18,6 +18,8 @@ const Footer = () => {
         justify={"space-between"}
         width={"100%"}
         flexDirection={{ base: "column", md: "row" }}
+        paddingX={{ base: 5, md: 10 }}
+        zIndex={1}
       >
         <HStack>
           <Heading fontSize="sm">Email:</Heading>
