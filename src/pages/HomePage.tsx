@@ -67,8 +67,8 @@ const HomePage = () => {
             height={{ base: "80px", sm: "100px" }}
             borderRadius={"50%"}
             color={"white"}
-            bgColor={"#C44536"}
-            _hover={{ bgColor: "#DC4141" }}
+            bgColor={"#006494"}
+            _hover={{ bgColor: "#0582CA" }}
           >
             Projects
           </Button>
@@ -82,7 +82,7 @@ const HomePage = () => {
             borderRadius={"50%"}
             color={"white"}
             bgColor={"#219EBC"}
-            _hover={{ bgColor: "#20adcf" }}
+            _hover={{ bgColor: "#25B9D0" }}
           >
             Resume
           </Button>
@@ -95,8 +95,8 @@ const HomePage = () => {
             height={{ base: "80px", sm: "100px" }}
             borderRadius={"50%"}
             color={"white"}
-            bgColor={"#9B5DE5"}
-            _hover={{ bgColor: "#ad71f3" }}
+            bgColor={"#5E60CE"}
+            _hover={{ bgColor: "#8284D9" }}
           >
             About
           </Button>

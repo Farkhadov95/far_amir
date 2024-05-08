@@ -19,7 +19,7 @@ const ProjectsPage = () => {
       paddingTop={{ base: "20px", sm: "20px" }}
       paddingBottom={"125px"}
       position={"relative"}
-      bgColor={"#C44536"}
+      bgColor={"#006494"}
       color={"white"}
       id="projects"
     >
@@ -27,10 +27,10 @@ const ProjectsPage = () => {
         Projects
       </Heading>
 
-      <Tabs isFitted variant="soft-rounded" colorScheme="gray">
+      <Tabs isFitted variant="soft-rounded" colorScheme="blue">
         <TabList mb="2rem" border={"1px solid"} borderRadius={"50px"}>
-          <Tab>Personal</Tab>
-          <Tab>Practice</Tab>
+          <Tab color={"white"}>Personal</Tab>
+          <Tab color={"white"}>Practice</Tab>
         </TabList>
         <TabPanels>
           <TabPanel padding={0}>

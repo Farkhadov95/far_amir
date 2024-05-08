@@ -8,7 +8,7 @@ const AboutPage = () => {
       flexGrow={1}
       paddingX={"10vw"}
       paddingBottom={"5vh"}
-      bgColor={"#9B5DE5"}
+      bgColor={"#5E60CE"}
       color={"white"}
       id="about"
     >
