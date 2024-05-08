@@ -65,10 +65,10 @@ const HomePage = () => {
             to={`projects`}
             smooth={true}
             duration={500}
-            colorScheme="red"
             width={{ base: "80px", sm: "100px" }}
             height={{ base: "80px", sm: "100px" }}
             borderRadius={"50%"}
+            color={"white"}
             bgColor={"#C44536"}
             _hover={{ bgColor: "#DC4141" }}
           >
@@ -79,10 +79,10 @@ const HomePage = () => {
             to={"resume"}
             smooth={true}
             duration={500}
-            colorScheme="blue"
             width={{ base: "80px", sm: "100px" }}
             height={{ base: "80px", sm: "100px" }}
             borderRadius={"50%"}
+            color={"white"}
             bgColor={"#219EBC"}
             _hover={{ bgColor: "#20adcf" }}
           >
