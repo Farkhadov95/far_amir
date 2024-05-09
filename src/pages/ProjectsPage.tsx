@@ -43,7 +43,7 @@ const ProjectsPage = () => {
               </Box>
             ))}
           </TabPanel>
-          <TabPanel paddingBottom={0}>
+          <TabPanel padding={0}>
             {eduProjects.map((project, index) => (
               <Box key={project.id}>
                 <ProjectsItem project={project} />
