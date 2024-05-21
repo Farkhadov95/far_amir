@@ -6,11 +6,13 @@ import {
   Button,
   Icon,
   Link,
+  HStack,
 } from "@chakra-ui/react";
 import { BsFillCircleFill } from "react-icons/bs";
 import { RxDownload } from "react-icons/rx";
 import "../assets/svg/navbar.css";
 import cv from "/Amir Farkhadov's CV.pdf";
+import Contacts from "./Contacts";
 
 const Navbar = () => {
   return (
@@ -52,15 +54,18 @@ const Navbar = () => {
         <Text fontSize="sm">Frontend Developer</Text>
       </Box>
 
-      <Button
-        colorScheme="white"
-        variant={"outline"}
-        as={Link}
-        href={cv}
-        download={true}
-      >
-        <Icon as={RxDownload} size="1em" />
-      </Button>
+      <HStack gap={3}>
+        <Button
+          colorScheme="white"
+          variant={"outline"}
+          as={Link}
+          href={cv}
+          download={true}
+        >
+          <Icon as={RxDownload} size="1em" />
+        </Button>
+        <Contacts />
+      </HStack>
     </Box>
   );
 };

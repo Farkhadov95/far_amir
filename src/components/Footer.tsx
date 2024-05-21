@@ -23,7 +23,7 @@ const Footer = () => {
       >
         <HStack>
           <Heading fontSize="sm">Email:</Heading>
-          <Text>Farkhadov950405@gmail.com</Text>
+          <Text>farkhadov950405@gmail.com</Text>
         </HStack>
         <HStack>
           <Heading fontSize="sm">Social Media:</Heading>
