@@ -36,7 +36,13 @@ const Navbar = () => {
         </svg>
       </div>
 
-      <VStack alignItems={"end"} gap={0} zIndex={1} flexWrap={"wrap"}>
+      <VStack
+        alignItems={"end"}
+        flexDirection={{ base: "column", md: "row" }}
+        gap={{ base: 0, md: 2 }}
+        zIndex={1}
+        flexWrap={"wrap"}
+      >
         <HStack>
           <BsFillCircleFill fill="#264653" />
           <Heading fontSize="lg">Amir Farkhadov</Heading>
