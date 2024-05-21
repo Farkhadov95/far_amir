@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <HStack
       justifyContent="space-between"
-      paddingX={{ base: 5, md: 10 }}
+      paddingX={{ base: 5 }}
       paddingTop={{ base: 3, sm: 5 }}
       paddingBottom={{ base: "80px", md: 0 }}
       position={"relative"}
