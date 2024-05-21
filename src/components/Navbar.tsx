@@ -1,23 +1,11 @@
-import {
-  Box,
-  Divider,
-  Heading,
-  Text,
-  Button,
-  Icon,
-  Link,
-  HStack,
-} from "@chakra-ui/react";
+import { Heading, Text, HStack, VStack } from "@chakra-ui/react";
 import { BsFillCircleFill } from "react-icons/bs";
-import { RxDownload } from "react-icons/rx";
 import "../assets/svg/navbar.css";
-import cv from "/Amir Farkhadov's CV.pdf";
 import Contacts from "./Contacts";
 
 const Navbar = () => {
   return (
-    <Box
-      display="flex"
+    <HStack
       justifyContent="space-between"
       paddingX={{ base: 5, md: 10 }}
       paddingTop={{ base: 3, sm: 5 }}
@@ -48,25 +36,16 @@ const Navbar = () => {
         </svg>
       </div>
 
-      <Box display="flex" gap={2} alignItems="center" zIndex={1}>
-        <BsFillCircleFill fill="#264653" />
-        <Heading fontSize="lg">Amir Farkhadov</Heading>
+      <VStack alignItems={"end"} gap={0} zIndex={1} flexWrap={"wrap"}>
+        <HStack>
+          <BsFillCircleFill fill="#264653" />
+          <Heading fontSize="lg">Amir Farkhadov</Heading>
+        </HStack>
         <Text fontSize="sm">Frontend Developer</Text>
-      </Box>
+      </VStack>
 
-      <HStack gap={3}>
-        <Button
-          colorScheme="white"
-          variant={"outline"}
-          as={Link}
-          href={cv}
-          download={true}
-        >
-          <Icon as={RxDownload} size="1em" />
-        </Button>
-        <Contacts />
-      </HStack>
-    </Box>
+      <Contacts />
+    </HStack>
   );
 };
 

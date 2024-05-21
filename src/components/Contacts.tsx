@@ -13,9 +13,11 @@ import {
   Text,
   Box,
   Link,
+  Icon,
 } from "@chakra-ui/react";
-import React from "react";
 import { BsLinkedin, BsFacebook, BsTelegram, BsGithub } from "react-icons/bs";
+import { RxDownload } from "react-icons/rx";
+import cv from "/Amir Farkhadov's CV.pdf";
 
 const Contacts = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -30,12 +32,12 @@ const Contacts = () => {
         <ModalContent>
           <ModalHeader>Contacts</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
+          <ModalBody py={5}>
             <HStack>
               <Heading fontSize="sm">Email:</Heading>
               <Text>farkhadov950405@gmail.com</Text>
             </HStack>
-            <Box display="flex" gap={2} marginTop={2}>
+            <Box display="flex" gap={2} marginTop={3}>
               <Link href="https://www.linkedin.com/in/amir-farkhadov-513601222/">
                 <BsLinkedin fontSize={"24px"} />
               </Link>
@@ -51,7 +53,17 @@ const Contacts = () => {
             </Box>
           </ModalBody>
 
-          <ModalFooter>
+          <ModalFooter justifyContent={"space-between"}>
+            <Button
+              colorScheme="white"
+              variant={"outline"}
+              as={Link}
+              href={cv}
+              download={true}
+              rightIcon={<RxDownload />}
+            >
+              Download CV
+            </Button>
             <Button colorScheme="teal" mr={3} onClick={onClose}>
               Close
             </Button>

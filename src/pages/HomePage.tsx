@@ -1,14 +1,13 @@
 import { Link } from "react-scroll";
 import Lottie from "lottie-react";
-import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import picture from "/DSC_35817.webp";
 import dev from "../assets/dev.json";
 import "../assets/svg/home-bottom.css";
 
 const HomePage = () => {
   return (
-    <Box
-      display="flex"
+    <VStack
       flexDirection={{ base: "column", sm: "column", md: "row" }}
       paddingBottom={{ base: "100px", sm: "120px", md: "150px" }}
       alignItems="center"
@@ -125,7 +124,7 @@ const HomePage = () => {
           ></path>
         </svg>
       </div>
-    </Box>
+    </VStack>
   );
 };
 
