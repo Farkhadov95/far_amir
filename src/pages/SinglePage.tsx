@@ -7,8 +7,8 @@ const SinglePage = () => {
   return (
     <>
       <HomePage />
-      <ProjectsPage />
       <ResumePage />
+      <ProjectsPage />
       <AboutPage />
     </>
   );

@@ -10,6 +10,8 @@ import {
   BiLogoJava,
   BiLogoPython,
   BiLogoMongodb,
+  BiLogoFirebase,
+  BiSolidPurchaseTag 
 } from "react-icons/bi";
 import {
   SiJavascript,
@@ -21,6 +23,8 @@ import {
   SiAdobephotoshop,
   SiKotlin,
   SiAndroidstudio,
+  SiExpo,
+  SiXcode 
 } from "react-icons/si";
 
 export type Skill = {
@@ -28,7 +32,62 @@ export type Skill = {
   name: string;
 };
 
-const skills: Skill[] = [
+const mobileSkills: Skill[] = [
+  {
+    icon: BiLogoReact,
+    name: "React Native",
+  },
+  {
+    icon: SiExpo,
+    name: "Expo",
+  },
+  {
+    icon: BiLogoReact,
+    name: "React Navigation",
+  },
+  {
+    icon: SiExpo,
+    name: "Expo Router",
+  },
+  {
+    icon: BiLogoReact,
+    name: "Native Modules",
+  },
+  {
+    icon: SiRedux,
+    name: "Redux/Zustand",
+  },
+  {
+    icon: BiLogoFirebase,
+    name: "Firebase push-notifications",
+  },
+  {
+    icon: BiLogoFirebase,
+    name: "Firebase analytics",
+  },
+  {
+    icon: BiSolidPurchaseTag,
+    name: "In-app Purschasing",
+  },
+  {
+    icon: BiLogoGithub,
+    name: "Git/Github",
+  },
+  {
+    icon: SiKotlin,
+    name: "Kotlin",
+  },
+  {
+    icon: SiAndroidstudio,
+    name: "Android Studio",
+  },
+  {
+    icon: SiXcode,
+    name: "XCode",
+  },
+];
+
+const frontendSkills: Skill[] = [
   {
     icon: BiLogoHtml5,
     name: "HTML",
@@ -62,6 +121,17 @@ const skills: Skill[] = [
     name: "CSS Frameworks",
   },
   {
+    icon: BiLogoFigma,
+    name: "Figma",
+  },
+  {
+    icon: SiAdobephotoshop,
+    name: "Photoshop",
+  },
+];
+
+const backendSkills: Skill[] = [
+  {
     icon: SiNodedotjs,
     name: "Node.js",
   },
@@ -78,35 +148,14 @@ const skills: Skill[] = [
     name: "Socket.io",
   },
   {
-    icon: BiLogoGithub,
-    name: "Git/Github",
+    icon: BiLogoPython,
+    name: "Python",
   },
   {
     icon: BiLogoJava,
     name: "Java",
   },
-  {
-    icon: SiKotlin,
-    name: "Kotlin",
-  },
-  {
-    icon: SiAndroidstudio,
-    name: "Android Studio",
-  },
-  {
-    icon: BiLogoPython,
-    name: "Python",
-  },
-  {
-    icon: BiLogoFigma,
-    name: "Figma",
-  },
-  {
-    icon: SiAdobephotoshop,
-    name: "Photoshop",
-  },
 ];
 
-const otherSkills: Skill[] = [];
 
-export { skills, otherSkills };
+export { mobileSkills, frontendSkills, backendSkills };

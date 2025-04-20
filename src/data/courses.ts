@@ -54,13 +54,18 @@ const education: Course[] = [
 
 const work: Course[] = [
   {
-    date: "February - April 2024",
-    title: "Itransition",
+    date: "June 2024 - Present",
+    title: "Pay Way",
+    description: "Mobile Developer / Frontend Developer",
+  },
+  {
+    date: "September 2023 - June 2024",
+    title: "Liga-A",
     description: "Frontend Developer Internship",
   },
   {
-    date: "September 2023 - Present",
-    title: "Liga-A",
+    date: "February - April 2024",
+    title: "Itransition",
     description: "Frontend Developer Internship",
   },
 ];
